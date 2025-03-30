@@ -2,3 +2,24 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}
+@keyframes fadePulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+}
+
+.fade-pulse {
+  animation: fadePulse 1.5s infinite;
+}
